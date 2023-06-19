@@ -2,47 +2,37 @@
 <html>
     <head>
         <title>Manage Landing page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
         <link href="manage.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
-        <header>
-            <nav class="nav-big">
-                <div class="nav-one">
-                  <img src="images/logo.svg" class="logo-svg"/>
-                </div>
-                <div class="ref">
-                    <ul>
-                        <a href="Pricing"><li>Pricing</li></a>
-                        <a href="Product"><li>Product</li></a>
-                        <a href="About Us"><li>About Us</li></a>
-                        <a href="Careers"><li>Careers</li></a>
-                        <a href="Community"><li>Community</li></a>
-                    </ul>
-                </div>
-                <div>
-                    <a href="about"><button class="button-1">Get started</button></a>
-                </div>
-            </nav>
-            <nav class="nav-small">
-                <div>
-                <img src="images/logo.svg" class="logo-small"/>
-                </div>
-                <div>
-                <img src="images/icon-hamburger.svg" class="hamburger"/>
-                </div>
-                </nav> 
-            <div class="hero-section">
-                <div class="description">
-                  <h1 class="cription">Bring everyone together to build better products.</h1>
-                  <p class="manange">Manage makes it simple for software teams to plan day-to-day tasks while
-                     keeping the larger team goals in view.</p>
-                  <a href="about"><button class="button-2">Get started</button></a>
-                 </div>
-                 <div class="hero-img-wrapper">
-                  <img src="images/illustration-intro.svg" class="intro"/>
-                </div>
+        <nav class="nav">
+            <img src="images/logo.svg" alt="Company's logo" class="logo" />
+            <ul>
+                <li><a href="Pricing">Pricing</a></li>
+                <li><a href="#Product">Product</a></li>
+                <li><a href="#AboutUs">About Us</a></li>
+                <li><a href="#Careers">Careers</a></li>
+                <li><a href="#Community">Community</a></li>
+            </ul>
+            
+            <a href="#" class="button button--primary">Get started</a>
+        </nav>
+           
+        <section class="hero-section">
+            <div class="hero-section__text">
+                <h1 class="cription">Bring everyone together to build better products.</h1>
+                <p class="manange">Manage makes it simple for software teams to plan day-to-day tasks while
+                    keeping the larger team goals in view.</p>
+                <a href="about"><button class="button-2">Get started</button></a>
             </div>
-        </header>
+            <div class="hero-section__image">
+                <img src="images/illustration-intro.svg" class="intro"/>
+            </div>
+        </section>
+
         <section class="plot-one">
         <div class="part-one">
         <h1>What's different about Manage?</h1>
@@ -127,10 +117,10 @@
             </section>
         </div>
         <a href="about"><button class="button-3">Get started</button></a>
-     <section class="plot-three">
+     <section class="team-work">
         <h1>Simplify how your team works today .</h1>
         <div>
-        <button class="get">Get started</button>
+        <button class="button">Get started</button>
         </div>
      </section>
      <footer class="footer-bottom">
