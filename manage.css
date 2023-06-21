@@ -3,9 +3,10 @@
     --primary-red: #f25f3a;
     --neutral-white: #ffffff;
     --dark-blue: #242d52;
+    --dark-grayish-blue: hsl(227, 12%, 61%);
 }
 
-*{
+*, ::after, ::before {
     margin: 0;
     padding: 0;
 }
@@ -47,14 +48,14 @@ ul{
 }
 
 
-.button--primary{
-    background-color: var(--primary-red);
-    color: var(--neutral-white);
+.button__primary{
+    background-color: var(--primary-red) !important;
+    color: var(--neutral-white) !important;
 }
 
-.button--secondary{
-    background-color: var(--neutral-white);
-    color: var(--primary-red);
+.button__secondary{
+    background-color: var(--neutral-white) !important;
+    color: var(--primary-red) !important;
 } 
 
 /*********************************** NAV SECTION ***************************/
@@ -79,7 +80,44 @@ ul{
 /*********************************** HERO SECTION ***************************/
 .hero-section{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto;
 }
+
+.hero-section > div {
+    width: 50%;
+}
+
+.description {
+    width: 81%;
+    line-height: 1.1em;
+    color: var(--dark-blue);
+    padding-bottom: 10px;
+    font-size: 3.8em;
+}
+
+.manange__text {
+    padding-bottom: 10px;
+    width: 55%;
+    font-size: 14px;
+    color: var(--dark-grayish-blue);
+    line-height: 1.6em;
+
+}
+
+.hero-section__image > img {
+    width: 530px;
+    padding: 2rem;
+}
+.button {
+    background-color: var(--neutral-white);
+    color: var(--primary-red);
+    margin-top: 2em;
+}  
+
+
 
 /*********************************** HERO SECTION END ***************************/
 
